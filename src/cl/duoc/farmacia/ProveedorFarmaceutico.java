@@ -10,15 +10,14 @@ package cl.duoc.farmacia;
  * @author fguajardo
  */
 public class ProveedorFarmaceutico {
-    private String codigoProveedor, nombre, medicamentoSuministradoa;
+    private String codigoProveedor, nombre, medicamentoSuministrado;
 
     public ProveedorFarmaceutico() {
     }
 
-    public ProveedorFarmaceutico(String codigoProveedor, String nombre, String medicamentoSuministradoa) {
+    public ProveedorFarmaceutico(String codigoProveedor, String nombre) {
         this.codigoProveedor = codigoProveedor;
         this.nombre = nombre;
-        this.medicamentoSuministradoa = medicamentoSuministradoa;
     }
 
     public String getCodigoProveedor() {
@@ -37,17 +36,17 @@ public class ProveedorFarmaceutico {
         this.nombre = nombre;
     }
 
-    public String getMedicamentoSuministradoa() {
-        return medicamentoSuministradoa;
+    public String getMedicamentoSuministrado() {
+        return medicamentoSuministrado;
     }
 
-    public void setMedicamentoSuministradoa(String medicamentoSuministradoa) {
-        this.medicamentoSuministradoa = medicamentoSuministradoa;
+    public void setMedicamentoSuministrado(String medicamentoSuministradoa) {
+        this.medicamentoSuministrado = medicamentoSuministradoa;
     }
 
     @Override
     public String toString() {
-        return "ProveedorFarmaceutico{" + "codigoProveedor=" + codigoProveedor + ", nombre=" + nombre + ", medicamentoSuministradoa=" + medicamentoSuministradoa + '}';
+        return "ProveedorFarmaceutico{" + "codigoProveedor=" + codigoProveedor + ", nombre=" + nombre + '}';
     }
     
     

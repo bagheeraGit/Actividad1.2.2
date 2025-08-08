@@ -15,10 +15,9 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String numeroCliente, String nombre, String medicamentoAdquirido) {
+    public Cliente(String numeroCliente, String nombre) {
         this.numeroCliente = numeroCliente;
         this.nombre = nombre;
-        this.medicamentoAdquirido = medicamentoAdquirido;
     }
 
     public String getNumeroCliente() {
@@ -46,11 +45,16 @@ public class Cliente {
     }
     
     public void realizarCompra(Medicamento medicamento){
-        
+        medicamento.vender(this);
     }
     
     public void devolverMedicamento(){
-    
+        if (medicamentoAdquirido != null) {
+            System.out.println(nombre + " devolvió " + medicamentoAdquirido);
+            medicamentoAdquirido = null;
+        } else {
+            System.out.println("No hay medicamento para devolver");
+        }
     }
 
     @Override

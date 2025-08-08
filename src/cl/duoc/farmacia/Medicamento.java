@@ -68,6 +68,13 @@ public class Medicamento {
     
     public void vender(Cliente cliente){
         System.out.println("Método que registra la venta del medicamento a un cliente");
+        if (stock > 0) {
+            stock--;
+            System.out.println("Medicamento " + nombre + " vendido a " + cliente.getNombre());
+            cliente.setMedicamentoAdquirido(nombre);
+        } else {
+            System.out.println("Stock insuficiente de " + nombre);
+        }
         
     }
 
