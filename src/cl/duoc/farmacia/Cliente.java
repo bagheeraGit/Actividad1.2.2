@@ -52,4 +52,11 @@ public class Cliente {
     public void devolverMedicamento(){
     
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "numeroCliente=" + numeroCliente + ", nombre=" + nombre + ", medicamentoAdquirido=" + medicamentoAdquirido + '}';
+    }
+    
+    
 }

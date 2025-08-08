@@ -70,5 +70,10 @@ public class Medicamento {
         System.out.println("Método que registra la venta del medicamento a un cliente");
         
     }
+
+    @Override
+    public String toString() {
+        return "Medicamento{" + "codigo=" + codigo + ", nombre=" + nombre + ", tipo=" + tipo + ", stock=" + stock + ", caducidad=" + caducidad + '}';
+    }
            
 }
